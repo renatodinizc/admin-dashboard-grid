@@ -11,11 +11,36 @@ body {
 header {
   grid-column: 2;
   grid-row: 1;
-  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3%;
+}
+
+.searchbox {
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 40%;
+  margin-right: auto;
+}
+
+header>:nth-child(3) {
+  margin-left: auto;
+}
+
+header img {
+  width: 30px;
+  height: auto;
+}
+
+header>:nth-child(5) {
+margin-right: 3%;
+font-weight: 700;
 }
 
 .sidebar {
-  background-color: #166534;
+  background-color: #0ea5e9;
   color: white;
   grid-column: 1;
   grid-row: 1 / 4;
