@@ -4,7 +4,7 @@
 body {
   display: grid;
   grid-template-columns: minmax(250px, 1fr) 4fr;
-  grid-template-rows: 100px 1fr 3fr 1fr;
+  grid-template-rows: 0.3fr 0.5fr 3fr 1fr;
   gap: 10px;
 }
 
@@ -21,7 +21,7 @@ header {
   background-color: lightgray;
   border-radius: 10px;
   padding: 10px;
-  padding-right: 40%;
+  padding-right: 50%;
   margin-right: auto;
 }
 
@@ -32,6 +32,7 @@ header>:nth-child(3) {
 header img {
   width: 30px;
   height: auto;
+  border-radius: 20px;
 }
 
 header>:nth-child(5) {
@@ -94,9 +95,37 @@ font-weight: 700;
 }
 
 .navbar {
-  background-color: lightgoldenrodyellow;
   grid-column: 2;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 1fr;
+}
+
+.navbar>img{
+  width: 70px;
+  height: auto;
+  border-radius: 50px;
+  border: solid 1px black;
+}
+
+.button-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5%;
+  margin-left: auto;
+  margin-right: 10%;
+}
+.button-panel>button {
+  background-color: #0ea5e9;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 700;
 }
 
 .cardboard {
